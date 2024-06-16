@@ -1,0 +1,379 @@
+/* Reset and general styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 70px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #67646418;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.left-links,
+.right-links {
+    display: flex;
+    align-items: center;
+}
+
+.left-links {
+    margin-left: -80px;
+}
+
+.left-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.left-links a:first-child {
+    color: #89CFF0;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 200px;
+}
+
+.left-links a:hover {
+    background-color: #f0f0f0;
+}
+
+.right-links {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.right-links a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.right-links a i {
+    margin-right: 5px;
+}
+
+.right-links a:hover {
+    background-color: #f0f0f0;
+}
+
+.search-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 30px 5px 10px;
+    border: 1px solid #1e3857;
+    border-radius: 3px;
+}
+
+.search-icon {
+    position: absolute;
+    left: calc(100% - 30px);
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(84, 105, 126, 0.914);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.search-icon .fas.fa-search {
+    color: #fff;
+}
+
+/* Center container */
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.logo-icon {
+    background-color: #89CFF0;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text {
+    color: #89CFF0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.center-links {
+    display: flex;
+    margin-right: 230px;
+}
+
+.center-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 12px;
+}
+
+.center-links a:hover {
+    background-color: #f0f0f0;
+}
+
+.center-links a i {
+    margin-left: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.faint-hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.eagleone {
+    width: 70%;
+}
+
+.coffeeone {
+    width: 40%;
+    margin-left: 10px;
+    margin-bottom: 250px;
+}
+
+.protectone {
+    width: 28%;
+    margin-top: -253px;
+    margin-left: 900px;
+}
+
+/* Basic button styles */
+.basic-btn {
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0a9ce0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.basic-btn:hover {
+    background-color: #0a9ce0;
+}
+
+.btn-container {
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Flex container styles */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Flex item styles */
+.flex-item {
+    flex: 1 1 18%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(161, 159, 159);
+}
+
+.flex-item img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.flex-item h2 {
+    margin: 5px 0;
+}
+
+.flex-item .basic-btn {
+    margin-top: auto;
+    align-self: center;
+}
+
+/* Community grid section */
+.community {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.community-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+    justify-items: center;
+}
+
+.community-grid img {
+    max-width: 80%;
+    height: auto;
+}
+
+.h-community {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* New Products Section */
+.new-products {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 20px;
+}
+
+.carousel-slide {
+    min-width: 200px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    margin-right: 10px;
+}
+
+.carousel-slide img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.product-info {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.product-info img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.product-info .description {
+    color: #333;
+    font-size: 12px;
+}
+
+/* Real Reviews Section */
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.review {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+    color: #ffd700;
+}
+
+.stars .fas.fa-star {
+    margin-right: 2px;
+}
+
+.review h6 {
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer {
+    background-color: #0a9ce0;
+    color: white;
+}
